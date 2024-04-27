@@ -1,0 +1,6 @@
+<div  class="grid grid-cols-3 gap-8">
+    @for (product of products; track $index) {
+        <app-product (addToCart)="formChild($event)" [img]="product.img" [price]="product.price" [title]="product.title" />
+    }
+
+</div>
